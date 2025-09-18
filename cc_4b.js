@@ -33,3 +33,14 @@ for (let product of products) {
     let promoPrice = (product.price * (1-discount)).toFixed(2);
     product.promoPrice = promoPrice;
 };
+
+// Step 4:
+let customerType = "student"
+let additionalDiscount = 0
+if (customerType === "student"){
+    additionalDiscount = 0.05;
+} if(customerType === "senior") {
+    additionalDiscount = 0.07;
+} else {
+    additionalDiscount = 0;
+}
