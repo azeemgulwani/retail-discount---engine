@@ -29,5 +29,7 @@ for (let product of products) {
             discount = 0;
             break;
     }
-    
-}
+    // Promo Price 
+    let promoPrice = (product.price * (1-discount)).toFixed(2);
+    product.promoPrice = promoPrice;
+};
